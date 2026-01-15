@@ -1,3 +1,5 @@
+# Exercício 01 de Python Poo -
+Atributos e Métodos
 # Declaração de Classe
 class Gafanhoto:
     def __init__(self, nome): # Método construtor
@@ -19,4 +21,5 @@ print(g1.aniversario2()) # PARA APARECER O RESULTADO NO CONSOLE
 
 g2 = Gafanhoto(" Mauro") # CHAMANDO A CLASSE CONCORRENTE
 g2.idade = 38
+
 print(g2.aniversario2())  # PARA APARECER O RESULTADO NO CONSOLE
