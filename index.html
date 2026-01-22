@@ -3,97 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Juliana Eiyng</title>
+    <title>Dev Portfólio | Juliana Eiyng</title>
     <style>
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            text-align: center; 
-            background-color: #f0f2f5; 
-            color: #333; 
-            margin: 0; 
-            padding: 40px 20px; 
+        :root {
+            --bg: #ffffff;
+            --text-main: #1a1a1a;
+            --text-sec: #666666;
+            --accent: #8b7355; /* O seu marrom/dourado de preferência */
+            --border: #ececec;
         }
-        
-        h1 { color: #000000; margin-bottom: 10px; font-weight: 700; }
-        .subtitle { color: #666; margin-bottom: 40px; font-size: 1.1em; }
-        
+
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg); 
+            color: var(--text-main); 
+            margin: 0; 
+            padding: 80px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            max-width: 800px;
+            margin: 0 auto 60px auto;
+            text-align: left;
+        }
+
+        h1 { font-size: 1.5rem; font-weight: 600; margin: 0; letter-spacing: -0.5px; }
+        .subtitle { color: var(--text-sec); font-size: 0.9rem; margin-top: 5px; }
+
         .container { 
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            gap: 25px; 
-            max-width: 1200px; 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 800px;
             margin: 0 auto;
         }
 
+        .section-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: block;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+
         .card { 
-            width: 320px; 
-            padding: 30px; 
-            border-radius: 15px; 
-            background-color: #ffffff; 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
-            text-align: left; 
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            border-top: 6px solid #8b7355;
+            background: none;
+            text-align: left;
         }
 
-        .card:hover { 
-            transform: translateY(-10px); 
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1); 
-        }
-
-        h3 { color: #1a1a1a; margin-top: 0; font-size: 1.4em; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        .secao-titulo { font-size: 0.85em; font-weight: bold; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; }
-        ul { font-size: 0.95em; color: #444; line-height: 2; padding-left: 0; list-style-type: none; flex-grow: 1; }
-        li { margin-bottom: 8px; }
+        ul { list-style: none; padding: 0; margin: 0; }
         
-        a { color: #8b7355; text-decoration: none; font-weight: 600; transition: color 0.2s; }
-        a:hover { color: #5d4d39; text-decoration: underline; }
+        li { 
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
 
-        .instrutor { 
-            font-size: 0.8em; 
-            color: #999; 
-            margin-top: 20px; 
-            padding-top: 15px;
-            border-top: 1px dashed #eee;
-            font-style: italic; 
+        a { 
+            color: var(--text-main); 
+            text-decoration: none; 
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a:hover { 
+            color: var(--accent);
+            transform: translateX(3px);
+        }
+
+        /* Pequena seta que aparece no hover */
+        a::after {
+            content: '→';
+            opacity: 0;
+            transition: 0.2s;
+            font-size: 0.8rem;
+        }
+
+        a:hover::after {
+            opacity: 1;
+        }
+
+        .tag {
+            font-size: 0.7rem;
+            color: var(--text-sec);
+            background: #f5f5f5;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+
+        footer {
+            margin-top: 100px;
+            font-size: 0.8rem;
+            color: #ccc;
             text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <h1>Juliana Eiyng - Portfólio</h1>
-    <p class="subtitle">Estudante de Programação | Python | JavaScript</p>
+    <header>
+        <h1>Juliana Eiyng</h1>
+        <p class="subtitle">Software Studies & Projects</p>
+    </header>
 
     <div class="container">
         <div class="card">
-            <h3>JavaScript</h3>
-            <span class="secao-titulo">Fundamentos e Lógica</span>
+            <span class="section-title">JavaScript</span>
             <ul>
-                <li>📄 <a href="ex001.html" target="_blank">Exercício 001</a></li>
-                <li>📄 <a href="ex002.html" target="_blank">Exercício 002</a></li>
-                <li>📂 <a href="aula04.html" target="_blank">Aula 04</a></li>
-                <li>📄 <a href="ex003.html" target="_blank">Exercício 003</a></li>
-                <li>🖱️ <a href="ex004.html" target="_blank">Exercício 004 (DOM)</a></li>
-                <li>➕ <a href="ex005.html" target="_blank">Exercício 005 (Soma)</a></li>
-                <li>📄 <a href="ex007.html" target="_blank">Exercício 007 (Original)</a></li>
-                <li>🚗 <a href="aula08.ex/modelo.html" target="_blank">Sistema de Multas (Com CSS)</a></li>
+                <li><a href="ex001.html" target="_blank">Exercício 001 <span class="tag">Basic</span></a></li>
+                <li><a href="ex002.html" target="_blank">Exercício 002 <span class="tag">Basic</span></a></li>
+                <li><a href="aula04.html" target="_blank">Aula 04 <span class="tag">Logic</span></a></li>
+                <li><a href="ex003.html" target="_blank">Exercício 003 <span class="tag">Logic</span></a></li>
+                <li><a href="ex004.html" target="_blank">Exercício 004 <span class="tag">DOM</span></a></li>
+                <li><a href="ex005.html" target="_blank">Exercício 005 <span class="tag">Math</span></a></li>
+                <li><a href="ex007.html" target="_blank">Exercício 007 <span class="tag">Condições</span></a></li>
+                <li><a href="aula08.ex/modelo.html" target="_blank">Sistema de Multas <span class="tag">UI/CSS</span></a></li>
             </ul>
-            <p class="instrutor">Prof. Gustavo Guanabara</p>
         </div>
 
-        <div class="card" style="border-top-color: #000000;">
-            <h3>Python POO</h3>
-            <span class="secao-titulo">Backend</span>
+        <div class="card">
+            <span class="section-title">Python</span>
             <ul>
-                <li>🐍 <a href="ex001.py" target="_blank">Exercício 001.PyCharm</a></li>
+                <li><a href="ex001.py" target="_blank">Exercício 001 <span class="tag">POO</span></a></li>
             </ul>
-            <p class="instrutor">Prof. Gustavo Guanabara</p>
         </div>
     </div>
+
+    <footer>
+        &copy; 2026 Juliana Eiyng • Built with HTML/CSS
+    </footer>
 
 </body>
 </html>
