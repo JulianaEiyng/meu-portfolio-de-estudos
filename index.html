@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Juliana Eiyng</title>
+    <title>Juliana Eiyng - Projetos</title>
     <style>
         body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            font-family: 'Segoe UI', Arial, sans-serif; 
             text-align: center; 
             background-color: #f0f2f5; 
             color: #333; 
@@ -14,59 +14,92 @@
             padding: 40px 20px; 
         }
         
-        h1 { font-size: 1.8em; margin-bottom: 5px; color: #000; }
-        .subtitle { color: #666; margin-bottom: 30px; font-size: 0.9em; }
-        
+        header { margin-bottom: 50px; }
+        h1 { font-size: 2.2rem; margin: 0; color: #000; font-weight: bold; }
+        .subtitle { font-size: 1rem; color: #666; margin-top: 10px; }
+
         .container { 
             display: flex; 
-            flex-wrap: wrap; 
             justify-content: center; 
-            gap: 20px; 
-            max-width: 1000px; 
+            gap: 30px; 
+            flex-wrap: wrap;
+            max-width: 1100px; 
             margin: 0 auto; 
         }
 
-        /* Card com o tamanho original compacto */
+        /* Estilo fiel à sua última imagem */
         .card { 
-            width: 260px; 
-            padding: 20px; 
-            border-radius: 12px; 
-            background-color: #ebe5d5; /* Seu bege original */
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08); 
-            text-align: left; 
-            border-top: 6px solid #8b7355; 
+            background: #ffffff; 
+            border-radius: 15px; 
+            width: 300px; 
+            padding: 30px; 
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid #8b7355; /* Borda superior que você usa */
+            position: relative;
         }
 
-        h3 { border-bottom: 1px solid #d3ccbc; padding-bottom: 8px; margin-top: 0; font-size: 1.2em; }
+        h2 { 
+            font-size: 1.4rem; 
+            text-align: center;
+            margin: 0 0 10px 0;
+            color: #000;
+        }
+
+        .estudos-label {
+            display: block;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 25px;
+        }
+
+        ul { list-style: none; padding: 0; margin: 0; }
+        li { 
+            margin-bottom: 12px; 
+            font-size: 0.95rem; 
+            display: flex; 
+            align-items: center; 
+            color: #444;
+        }
         
-        ul { list-style: none; padding: 0; line-height: 2.2; margin-top: 15px; }
-        li { font-size: 0.9em; border-bottom: 1px solid rgba(0,0,0,0.03); }
-        li:last-child { border: none; }
-        
-        a { color: #444; text-decoration: none; font-weight: 500; }
-        a:hover { color: #8b7355; text-decoration: underline; }
+        /* Marcadores personalizados como na imagem */
+        li::before {
+            content: "•";
+            color: #333;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        a { color: #8b7355; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
 
         .instrutor { 
-            font-size: 0.75em; 
+            font-size: 0.8rem; 
             color: #999; 
-            margin-top: 20px; 
+            margin-top: 30px; 
             text-align: center; 
-            font-style: italic; 
+            font-style: italic;
         }
     </style>
 </head>
 <body>
 
-    <h1>Juliana Eiyng - Portfólio</h1>
-    <p class="subtitle">Estudante de Programação | Python | JavaScript</p>
+    <header>
+        <h1>Juliana Eiyng - Projetos</h1>
+        <p class="subtitle">Desenvolvedora Backend | Python | Node.js</p>
+    </header>
 
     <div class="container">
         <div class="card">
-            <h3>JavaScript</h3>
+            <h2>JavaScript</h2>
+            <span class="estudos-label">Estudos Práticos:</span>
             <ul>
                 <li>📄 <a href="ex001.html" target="_blank">Exercício 001</a></li>
                 <li>📄 <a href="ex002.html" target="_blank">Exercício 002</a></li>
-                <li>📂 <a href="aula04.html" target="_blank">Aula 04</a></li>
+                <li>📂 <a href="aula04.html" target="_blank">Aula 04 (Scripts)</a></li>
                 <li>📄 <a href="ex003.html" target="_blank">Exercício 003</a></li>
                 <li>📄 <a href="ex004.html" target="_blank">Exercício 004</a></li>
                 <li>📄 <a href="ex005.html" target="_blank">Exercício 005</a></li>
@@ -76,10 +109,21 @@
             <p class="instrutor">Prof. Gustavo Guanabara</p>
         </div>
 
-        <div class="card" style="border-top-color: #000;">
-            <h3>Python</h3>
+        <div class="card">
+            <h2>Python POO</h2>
+            <span class="estudos-label">Backend:</span>
             <ul>
-                <li>🐍 <a href="ex001.py" target="_blank">Exercício 001</a></li>
+                <li>🐍 <a href="ex001.py" target="_blank">Exercício 001.PyCharm</a></li>
+            </ul>
+            <p class="instrutor">Prof. Gustavo Guanabara</p>
+        </div>
+
+        <div class="card">
+            <h2>Node.js</h2>
+            <span class="estudos-label">Backend:</span>
+            <ul>
+                <li>🌐 Ambiente e NPM</li>
+                <li>🚀 APIs e Servidor</li>
             </ul>
             <p class="instrutor">Prof. Gustavo Guanabara</p>
         </div>
