@@ -3,86 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Juliana Eiyng</title>
+    <title>Portfólio | Juliana Eiyng</title>
     <style>
         body { 
-            font-family: 'Segoe UI', sans-serif; 
-            text-align: center; 
-            background-color: #f0f2f5; 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            background-color: #f4f4f4; 
             color: #333; 
             margin: 0; 
             padding: 40px 20px; 
         }
         
-        h1 { font-size: 2em; margin-bottom: 5px; }
-        .subtitle { color: #666; margin-bottom: 40px; }
-        
+        header { margin-bottom: 30px; text-align: center; }
+        h1 { font-size: 1.8rem; margin: 0; color: #000; }
+        .subtitle { font-size: 0.9rem; color: #666; margin-top: 5px; }
+
         .container { 
             display: flex; 
-            flex-wrap: wrap; 
             justify-content: center; 
-            gap: 25px; 
-            max-width: 1200px; 
+            gap: 20px; 
+            flex-wrap: wrap;
+            max-width: 900px; 
             margin: 0 auto; 
         }
 
         .card { 
-            width: 320px; 
-            padding: 30px; 
-            border-radius: 15px; 
-            background-color: #ebe5d5; /* Cor bege original dos seus cards */
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
-            text-align: left; 
-            border-top: 6px solid #8b7355; 
+            background: #fff; 
+            border: 1px solid #ddd; 
+            border-radius: 4px; 
+            width: 280px; 
+            padding: 20px; 
+            text-align: left;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
-        h3 { border-bottom: 1px solid #d3ccbc; padding-bottom: 10px; margin-top: 0; }
-        .secao-titulo { font-size: 0.8em; font-weight: bold; color: #7a7364; text-transform: uppercase; display: block; margin: 15px 0 10px 0; }
-        
-        ul { list-style: none; padding: 0; line-height: 2.5; }
-        li { display: flex; align-items: center; gap: 8px; }
-        
-        a { color: #444; text-decoration: none; font-weight: 500; }
-        a:hover { text-decoration: underline; }
-
-        .instrutor { 
-            font-size: 0.8em; 
-            color: #999; 
-            margin-top: 30px; 
-            text-align: center; 
-            font-style: italic; 
+        h3 { 
+            font-size: 1rem; 
+            margin: 0 0 15px 0; 
+            padding-bottom: 8px; 
+            border-bottom: 2px solid #8b7355; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
+
+        ul { list-style: none; padding: 0; margin: 0; }
+        li { margin-bottom: 8px; font-size: 0.9rem; display: flex; align-items: center; }
+        
+        a { color: #333; text-decoration: none; transition: 0.2s; }
+        a:hover { color: #8b7355; font-weight: bold; }
+
+        .icon { margin-right: 8px; font-size: 1rem; }
     </style>
 </head>
 <body>
 
-    <h1>Juliana Eiyng - Portfólio</h1>
-    <p class="subtitle">Estudante de Programação | Python | JavaScript</p>
+    <header>
+        <h1>Juliana Eiyng - Portfólio</h1>
+        <p class="subtitle">Desenvolvimento de Software | Python | JavaScript</p>
+    </header>
 
     <div class="container">
         <div class="card">
             <h3>JavaScript</h3>
-            <span class="secao-titulo">Fundamentos e Lógica</span>
             <ul>
-                <li>📄 <a href="ex001.html" target="_blank">Exercício 001</a></li>
-                <li>📄 <a href="ex002.html" target="_blank">Exercício 002</a></li>
-                <li>📂 <a href="aula04.html" target="_blank">Aula 04</a></li>
-                <li>📄 <a href="ex003.html" target="_blank">Exercício 003</a></li>
-                <li>📄 <a href="ex004.html" target="_blank">Exercício 004 (DOM)</a></li>
-                <li>➕ <a href="ex005.html" target="_blank">Exercício 005 (Soma)</a></li>
-                <li>📄 <a href="ex007.html" target="_blank">Exercício 007</a></li>
-                <li>📂 <a href="aula08.ex/modelo.html" target="_blank">Aula 08 (Pasta)</a></li>
+                <li><span class="icon">📄</span><a href="ex001.html" target="_blank">Exercício 001</a></li>
+                <li><span class="icon">📄</span><a href="ex002.html" target="_blank">Exercício 002</a></li>
+                <li><span class="icon">📂</span><a href="aula04.html" target="_blank">Aula 04</a></li>
+                <li><span class="icon">📄</span><a href="ex003.html" target="_blank">Exercício 003</a></li>
+                <li><span class="icon">🖱️</span><a href="ex004.html" target="_blank">Exercício 004 (DOM)</a></li>
+                <li><span class="icon">➕</span><a href="ex005.html" target="_blank">Exercício 005 (Soma)</a></li>
+                <li><span class="icon">🚗</span><a href="ex007.html" target="_blank">Exercício 007</a></li>
+                <li><span class="icon">📂</span><a href="aula08.ex/modelo.html" target="_blank">Aula 08</a></li>
             </ul>
-            <p class="instrutor">Prof. Gustavo Guanabara</p>
         </div>
 
-        <div class="card" style="border-top-color: #000;">
-            <h3>Python POO</h3>
-            <span class="secao-titulo">Backend</span>
+        <div class="card">
+            <h3>Python</h3>
             <ul>
-                <li>🐍 <a href="ex001.py" target="_blank">Exercício 001.PyCharm</a></li>
+                <li><span class="icon">🐍</span><a href="ex001.py" target="_blank">Exercício 001</a></li>
             </ul>
-            <p class="instrutor">Prof. Gustavo Guanabara</p>
         </div>
     </div>
 
