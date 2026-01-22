@@ -37,10 +37,9 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
             flex-direction: column;
-            border-top: 6px solid #8b7355; /* Cor padrão */
+            border-top: 6px solid #8b7355;
         }
 
-        /* Efeito de elevação ao passar o mouse */
         .card:hover { 
             transform: translateY(-10px); 
             box-shadow: 0 15px 30px rgba(0,0,0,0.1); 
@@ -52,7 +51,7 @@
         
         ul { font-size: 0.95em; color: #444; line-height: 2; padding-left: 0; list-style-type: none; flex-grow: 1; }
         
-        li { margin-bottom: 8px; display: flex; align-items: center; }
+        li { margin-bottom: 8px; }
         
         a { color: #8b7355; text-decoration: none; font-weight: 600; transition: color 0.2s; }
         a:hover { color: #5d4d39; text-decoration: underline; }
@@ -64,18 +63,7 @@
             padding-top: 15px;
             border-top: 1px dashed #eee;
             font-style: italic; 
-        }
-
-        /* Badge de status */
-        .status-badge {
-            background: #e8f5e9;
-            color: #2e7d32;
-            font-size: 0.7em;
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 10px;
+            text-align: center;
         }
     </style>
 </head>
@@ -100,14 +88,13 @@
         </div>
 
         <div class="card">
-            <span class="status-badge">CONCLUÍDO</span>
             <h3>JS: Condições</h3>
-            <span class="secao-titulo">Lógica & DOM</span>
-            <p style="font-size: 0.9em; color: #666;">Foco em estruturas de decisão e interfaces dinâmicas.</p>
+            <span class="secao-titulo">Em desenvolvimento</span>
+            <p style="font-size: 0.9em; color: #666;">Estudo de fluxos de decisão e resposta dinâmica.</p>
             <ul>
-                <li>🚗 <a href="ex007.html" target="_blank">Sistema de Multas (007)</a></li>
-                <li>💡 <strong>Lógica:</strong> Estruturas if/else</li>
-                <li>🎨 <strong>Estilo:</strong> CSS Modularizado</li>
+                <li>🚗 <a href="ex007.html" target="_blank">Sistema de Multas (Acessar)</a></li>
+                <li>💡 <a href="ex007.html" target="_blank">Lógica: Condições if/else</a></li>
+                <li>🎨 <a href="ex007.html" target="_blank">Estilo: Arquitetura CSS</a></li>
             </ul>
             <p class="instrutor">Módulo Prático</p>
         </div>
@@ -124,3 +111,8 @@
 
 </body>
 </html>
+
+            
+
+   
+        
