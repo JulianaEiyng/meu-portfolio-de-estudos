@@ -5,44 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Juliana Eiyng</title>
     <style>
-        body { font-family: sans-serif; text-align: center; background-color: #f4f4f4; color: #333; margin: 0; padding: 20px; }
-        h1 { color: #000000; margin-bottom: 5px; }
-        .subtitle { color: #555; margin-bottom: 30px; }
-        .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
-        .card { width: 300px; padding: 25px; border-radius: 12px; background-color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: left; }
-        h3 { color: #000000; margin-top: 0; text-align: center; }
-        ul { font-size: 0.9em; color: #555555; line-height: 1.8; padding-left: 20px; list-style-type: none; }
-        a { color: #8b7355; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
-        .instrutor { font-size: 0.75em; color: #8b7355; margin-top: 15px; font-style: italic; text-align: center; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            background-color: #f0f2f5; 
+            color: #333; 
+            margin: 0; 
+            padding: 40px 20px; 
+        }
+        
+        h1 { color: #000000; margin-bottom: 10px; font-weight: 700; }
+        .subtitle { color: #666; margin-bottom: 40px; font-size: 1.1em; }
+        
+        .container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 25px; 
+            max-width: 1200px; 
+            margin: 0 auto;
+        }
+
+        /* Estilo Profissional dos Cards */
+        .card { 
+            width: 320px; 
+            padding: 30px; 
+            border-radius: 15px; 
+            background-color: #ffffff; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
+            text-align: left; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border-top: 6px solid #8b7355; /* Cor padrão */
+        }
+
+        /* Efeito de elevação ao passar o mouse */
+        .card:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1); 
+        }
+
+        h3 { color: #1a1a1a; margin-top: 0; font-size: 1.4em; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        
+        .secao-titulo { font-size: 0.85em; font-weight: bold; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; }
+        
+        ul { font-size: 0.95em; color: #444; line-height: 2; padding-left: 0; list-style-type: none; flex-grow: 1; }
+        
+        li { margin-bottom: 8px; display: flex; align-items: center; }
+        
+        a { color: #8b7355; text-decoration: none; font-weight: 600; transition: color 0.2s; }
+        a:hover { color: #5d4d39; text-decoration: underline; }
+
+        .instrutor { 
+            font-size: 0.8em; 
+            color: #999; 
+            margin-top: 20px; 
+            padding-top: 15px;
+            border-top: 1px dashed #eee;
+            font-style: italic; 
+        }
+
+        /* Badge de status */
+        .status-badge {
+            background: #e8f5e9;
+            color: #2e7d32;
+            font-size: 0.7em;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Juliana Eiyng - Projetos</h1>
-    
+    <h1>Juliana Eiyng - Portfólio</h1>
     <p class="subtitle">Estudante de Programação | Python | JavaScript</p>
 
     <div class="container">
-        <div class="card" style="border-top: 5px solid #8b7355;">
+        <div class="card">
             <h3>JavaScript</h3>
-            <p style="font-size: 0.9em; text-align: center;">Estudos Práticos:</p>
+            <span class="secao-titulo">Fundamentos</span>
             <ul>
-                <li><a href="ex001.html" target="_blank">📄 Exercício 001</a></li>
-                <li><a href="ex002.html" target="_blank">📄 Exercício 002</a></li>
-                <li><a href="aula04.html" target="_blank">📂 Aula 04 (Scripts)</a></li>
-                <li><a href="ex003.html" target="_blank">📄 Exercício 05 (Aula 06)</a></li>
-                <li><a href="ex004.html" target="_blank">🖱️ Exercício 004 (DOM)</a></li>
-                <li><a href="ex005.html" target="_blank">➕ Exercício 005 (Soma)</a></li>
+                <li>📄 <a href="ex001.html" target="_blank">Exercício 001</a></li>
+                <li>📄 <a href="ex002.html" target="_blank">Exercício 002</a></li>
+                <li>📂 <a href="aula04.html" target="_blank">Aula 04 (Scripts)</a></li>
+                <li>📄 <a href="ex003.html" target="_blank">Exercício 05 (Aula 06)</a></li>
+                <li>🖱️ <a href="ex004.html" target="_blank">Exercício 004 (DOM)</a></li>
+                <li>➕ <a href="ex005.html" target="_blank">Exercício 005 (Soma)</a></li>
             </ul>
             <p class="instrutor">Prof. Gustavo Guanabara</p>
         </div>
 
-        <div class="card" style="border-top: 5px solid #000000;">
-            <h3>Python POO</h3>
-            <p style="font-size: 0.9em; text-align: center;">Estudos Práticos:</p>
+        <div class="card">
+            <span class="status-badge">CONCLUÍDO</span>
+            <h3>JS: Condições</h3>
+            <span class="secao-titulo">Lógica & DOM</span>
+            <p style="font-size: 0.9em; color: #666;">Foco em estruturas de decisão e interfaces dinâmicas.</p>
             <ul>
-                <li><a href="ex001.py" target="_blank">🐍 Exercício 001.PyCharm</a></li>
+                <li>🚗 <a href="ex007.html" target="_blank">Sistema de Multas (007)</a></li>
+                <li>💡 <strong>Lógica:</strong> Estruturas if/else</li>
+                <li>🎨 <strong>Estilo:</strong> CSS Modularizado</li>
+            </ul>
+            <p class="instrutor">Módulo Prático</p>
+        </div>
+
+        <div class="card" style="border-top-color: #000000;">
+            <h3>Python POO</h3>
+            <span class="secao-titulo">Backend</span>
+            <ul>
+                <li>🐍 <a href="ex001.py" target="_blank">Exercício 001.PyCharm</a></li>
             </ul>
             <p class="instrutor">Prof. Gustavo Guanabara</p>
         </div>
@@ -50,4 +124,3 @@
 
 </body>
 </html>
-
