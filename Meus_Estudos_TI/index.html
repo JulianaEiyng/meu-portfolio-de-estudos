@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Juliana Eiyng</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 { color: #000000; margin-bottom: 5px; }
+        .subtitle { color: #555; margin-bottom: 30px; }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            height: auto; 
+            width: 300px; 
+            padding: 25px; 
+            border-radius: 12px; 
+            background-color: #ffffff; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h3 { color: #000000; margin-top: 0; }
+        
+        ul {
+            text-align: left; 
+            font-size: 0.9em; 
+            color: #555555; 
+            line-height: 1.6;
+            padding-left: 20px;
+        }
+
+        .instrutor {
+            font-size: 0.75em; 
+            color: #8b7355; 
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        /* Botão Cor Areia Atualizado */
+        .btn-contato {
+            background-color: #d2b48c; 
+            color: #333; 
+            padding: 15px 30px; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            display: inline-block; 
+            margin-top: 30px;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+
+        /* Dados ocultos */
+        #dados-contato {
+            display: none;
+            margin-top: 10px;
+            font-weight: normal;
+            font-size: 0.85em;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Juliana Eiyng - Projetos</h1>
+    <p class="subtitle">Desenvolvedora Backend | Python POO | Node.js</p>
+
+    <div class="container">
+        <div class="card" style="border-top: 5px solid #4b3621;">
+            <h3>Node.js</h3>
+            <p>Desenvolvimento de scripts e lógica de servidor.</p>
+            <ul>
+                <li>Ambiente Node e NPM</li>
+                <li>Criação de APIs básicas</li>
+            </ul>
+            <p class="instrutor">Instrutor: Prof. Gustavo Guanabara (Curso em Vídeo)</p>
+        </div>
+
+        <div class="card" style="border-top: 5px solid #000000;">
+            <h3>Python POO</h3>
+            <p>Programação Orientada a Objetos e Automação.</p>
+            <ul>
+                <li>Classes e Métodos</li>
+                <li>Herança e Polimorfismo</li>
+                <li>Tratamento de Dados</li>
+            </ul>
+            <p class="instrutor">Instrutor: Prof. Gustavo Guanabara (Curso em Vídeo)</p>
+        </div>
+
+        <div class="card" style="border-top: 5px solid #8b7355;">
+            <h3>JavaScript</h3>
+            <p>Lógica de programação e interatividade.</p>
+            <ul>
+                <li>Variáveis e Tipos de Dados</li>
+                <li>Manipulação de DOM</li>
+                <li>Eventos e Funções</li>
+            </ul>
+            <p class="instrutor">Instrutor: Prof. Gustavo Guanabara (Curso em Vídeo)</p>
+        </div>
+    </div>
+
+    <button class="btn-contato" onclick="revelarContato()">
+        Contato Profissional
+        <div id="dados-contato">
+            (48) 99129-7084 | jueiyng@gmail.com
+        </div>
+    </button>
+
+    <script>
+        function revelarContato() {
+            var x = document.getElementById("dados-contato");
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
