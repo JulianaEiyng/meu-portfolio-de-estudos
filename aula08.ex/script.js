@@ -13,12 +13,12 @@ function verificar() {
         var img = document.createElement('img')
         img.setAttribute('id', 'foto')
         
-        // --- LINHAS PARA DIMINUIR A FOTO ---
+        
         img.style.width = '150px' 
         img.style.height = '150px'
-        img.style.borderRadius = '50%' // Deixa redondinha igual ao vídeo
+        img.style.borderRadius = '50%' 
         img.style.marginTop = '10px'
-        // ----------------------------------
+        
 
         if (fsex[0].checked) {
             genero = 'Homem'
@@ -46,3 +46,4 @@ function verificar() {
         res.innerHTML = `Detectamos ${genero} com ${idade} anos.<br>`
         res.appendChild(img)
     }
+
