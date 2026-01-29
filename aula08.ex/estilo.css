@@ -16,7 +16,11 @@ section {
     margin: auto;  
     box-shadow: 5px 50px 10px black; 
 }
+div {
+    text-align: center;
+    padding: 5px
 
+}
 footer {
      color: white;
      text-align: center;
