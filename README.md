@@ -1,32 +1,26 @@
 # 🚀 Meu Portfólio de Estudos
 
-Bem-vindo(a) ao meu ecossistema de aprendizado e prática em tecnologia.  
-Este repositório centraliza minha jornada autodidata e acadêmica, documentando minha evolução técnica por meio de projetos reais, experimentos e formações complementares.
+Bem-vindo(a) ao meu ecossistema de aprendizado!  
+Este repositório centraliza minha jornada autodidata e acadêmica em tecnologia, registrando minha evolução por meio de projetos reais, práticas técnicas e formações complementares.
 
 ---
 
-## 💡 Áreas de Desenvolvimento
+## 📚 Minhas Frentes de Estudo
 
-### 🎯 Lógica e Fundamentos
-- Consolidação de lógica de programação
-- Estruturas de decisão e repetição
-- Resolução de problemas com foco em clareza e eficiência
+🟨 JavaScript  
+Consolidação de fundamentos e desenvolvimento da lógica de programação.
 
-### 💻 Desenvolvimento Back-End
-- Python
-- Programação Orientada a Objetos (POO)
-- Django (projetos aplicados)
+🐍 Python (POO)  
+Aplicação de Programação Orientada a Objetos e construção de sistemas práticos.
 
-### 🌐 Desenvolvimento Front-End
-- HTML5
-- CSS3
-- JavaScript
-- Estruturação e estilização de interfaces responsivas
+🌐 HTML5 & CSS3  
+Estruturação e estilização de interfaces com foco em organização e responsividade.
 
-### 📊 Projetos Aplicados
-- Sistema Imobiliário (automação prática)
-- Dashboard interativo (Imersão Dados)
-- CRM Imobiliário completo (projeto privado sob consulta)
+🧩 Django  
+Desenvolvimento de aplicações web completas, com foco em banco de dados, segurança e produtividade.
+
+📊 Projetos Aplicados  
+Sistema Imobiliário funcional, Dashboard interativo de dados e CRM Imobiliário completo (projeto privado sob consulta).
 
 ---
 
@@ -34,17 +28,17 @@ Este repositório centraliza minha jornada autodidata e acadêmica, documentando
 
 Os certificados conquistados ao longo da minha formação estão organizados na pasta:
 
-📂 `certificados/`
+📂 certificados/
 
 ---
 
 ## 🔗 Portfólio Online
 
-👉 Acesse meu Portfólio Online:  
-[Inserir link aqui]
+👉 Acesse meu Portfólio Online aqui
 
 ---
 
 Atualizado com dedicação por  
-**Juliana Eiyng**  
+Juliana Eiyng  
 Desenvolvedora em Formação | ADS
+
