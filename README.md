@@ -1,31 +1,50 @@
 # 🚀 Meu Portfólio de Estudos
 
-Bem-vindo(a) ao meu ecossistema de aprendizado! Este repositório centraliza minha jornada autodidata, documentando cada passo da minha evolução técnica.
+Bem-vindo(a) ao meu ecossistema de aprendizado e prática em tecnologia.  
+Este repositório centraliza minha jornada autodidata e acadêmica, documentando minha evolução técnica por meio de projetos reais, experimentos e formações complementares.
 
 ---
 
-### 📚 Minhas Frentes de Estudo
+## 💡 Áreas de Desenvolvimento
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+### 🎯 Lógica e Fundamentos
+- Consolidação de lógica de programação
+- Estruturas de decisão e repetição
+- Resolução de problemas com foco em clareza e eficiência
+
+### 💻 Desenvolvimento Back-End
+- Python
+- Programação Orientada a Objetos (POO)
+- Django (projetos aplicados)
+
+### 🌐 Desenvolvimento Front-End
+- HTML5
+- CSS3
+- JavaScript
+- Estruturação e estilização de interfaces responsivas
+
+### 📊 Projetos Aplicados
+- Sistema Imobiliário (automação prática)
+- Dashboard interativo (Imersão Dados)
+- CRM Imobiliário completo (projeto privado sob consulta)
 
 ---
 
-### 🎯 Detalhes Técnicos
+## 🏅 Certificados
 
-* **JavaScript:** Consolidação de fundamentos e lógica de programação.
-* **Python (POO):** Desenvolvimento focado em Programação Orientada a Objetos.
-* **HTML5 & CSS3:** Estruturação e estilização de interfaces.
-* **Markdown:** Padronização de documentação para clareza técnica.
+Os certificados conquistados ao longo da minha formação estão organizados na pasta:
+
+📂 `certificados/`
+
+---
+
+## 🔗 Portfólio Online
+
+👉 Acesse meu Portfólio Online:  
+[Inserir link aqui]
 
 ---
 
-### 🔗 Link Direto
-👉 [Acesse meu Portfólio Online aqui](https://julianaeiyng.github.io/meu-portfolio-de-estudos/)
-
----
-*Atualizado com dedicação por Juliana Eiyng*
+Atualizado com dedicação por  
+**Juliana Eiyng**  
+Desenvolvedora em Formação | ADS
